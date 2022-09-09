@@ -29,5 +29,5 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run ${{ env.GITHUB_RUN_NUMBER }}
+      - name: Run ${{ github.event }}
         run: echo Hello, ${env.JOB_NAME}
