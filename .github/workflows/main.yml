@@ -3,7 +3,7 @@
 name: CI
 
 env:
-  JOB_NAME: ${{GITHUB_JOB}}_${{GITHUB_RUN_NUMBER}}
+  JOB_NAME: ${{ env.GITHUB_JOB }}_${{ env.GITHUB_RUN_NUMBER }}
 
 # Controls when the workflow will run
 on:
